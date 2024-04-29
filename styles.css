@@ -14,12 +14,16 @@
     color: #333;
 }
 
-.project-entry img {
-    max-width: 15%;
-    height: auto;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
+.top-image-row {
+    display: flex; /* Aligns children (images) in a row */
+    justify-content: center; /* Centers the images in the flex container */
+    align-items: center; /* Centers the images vertically, if they are of different heights */
+    flex-wrap: wrap; /* This will vertically align flex items in the middle */
+}
+
+.top-image-row img {
+    height: 500px; /* Example fixed height */
+    object-fit: cover; /* To maintain aspect ratio */
 }
 
 .image-row {
